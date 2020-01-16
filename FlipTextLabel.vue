@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'HeaderBar',
+  name: 'FlipTextLabel',
   props: {
     text:  {
         type: String,
@@ -65,7 +65,7 @@ export default {
                         }
                     }
                     //end condition reached                
-                    if (this.textRendered == this.text) clearInterval(this.garbleInterval);
+                    if (this.textRendered === this.text) clearInterval(this.garbleInterval);
                 }, this.time)
             }
         }
